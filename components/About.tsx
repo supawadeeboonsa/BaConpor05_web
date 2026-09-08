@@ -1,5 +1,6 @@
 import { SectionHead } from "./SectionHead";
 
+
 const highlights = ["UX/UI Design", "Frontend Development", "Software Design", "Web Development"];
 
 export function About() {

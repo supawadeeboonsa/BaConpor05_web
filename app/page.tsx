@@ -14,5 +14,5 @@ import { ArrowUpIcon } from "../components/icons";
 
 export default function Home() {
   const { active, showTop } = ScrollEffects();
-  return <><BackgroundGrid/><Header active={active}/><main><Hero/><About/><Skills/><Works/><Freelance/><CodeBand/><Contact/></main><footer className="wrap"><span>©BaConpor05 2026</span><span className="thai">ออกแบบด้วยความตั้งใจ</span></footer><button className={`to-top ${showTop ? "show" : ""}`} aria-label="เลื่อนขึ้นด้านบน" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><ArrowUpIcon/></button></>;
+  return <><BackgroundGrid/><Header active={active}/><main><Hero/><About/><Skills/><Works/><Freelance/><CodeBand/><Contact/></main><footer className="wrap"><span>© BaConPor05</span><span className="thai">ออกแบบด้วยความตั้งใจ</span></footer><button className={`to-top ${showTop ? "show" : ""}`} aria-label="เลื่อนขึ้นด้านบน" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><ArrowUpIcon/></button></>;
 }

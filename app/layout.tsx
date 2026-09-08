@@ -1,11 +1,34 @@
-import type { Metadata } from "next";
+import { Inter, Noto_Sans_Thai, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Baipor Boonsa — Frontend Developer & UX/UI Designer",
-  description: "พอร์ตโฟลิโอส่วนตัวของสุภาวดี บุญสา (Baipor Boonsa) นักศึกษาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ ที่สนใจ UX/UI Design และ Frontend Development",
-};
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="th"><body>{children}</body></html>;
+const notoThai = Noto_Sans_Thai({
+  subsets: ["thai", "latin"],
+  weight: ["100", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-noto-thai",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source-serif",
+});
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="th">
+      <body
+        className={`${inter.variable} ${notoThai.variable} ${sourceSerif.variable}`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

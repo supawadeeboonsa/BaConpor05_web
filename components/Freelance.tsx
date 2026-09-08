@@ -11,7 +11,7 @@ const services = [
 ] as const;
 
 export function Freelance() {
-  return <section id="freelance" ><div className="wrap"><div className="section-head reveal"><div><span className="label">05 — Freelance</span><h2 className="section-title serif ">Freelance Services</h2></div><div className="hire-badge"><span className="dot"/><span className="thai">เปิดรับงานตอนนี้</span></div></div>
+  return <section id="freelance" ><div className="wrap"><div className="hero-index"><div><span className="num">05 — Freelance</span><h2 className="section-title serif ">Freelance Services</h2></div><div className="hire-badge"><span className="dot"/><span className="thai">เปิดรับงานตอนนี้</span></div></div>
     <div className="accepting-row reveal thai"><span className="lbl">รับงาน:</span><span className="pill-lead">UX/UI Design</span><span className="pill">Frontend Development</span><span className="pill">Portfolio Website</span><span className="pill">Redesign เว็บไซต์เดิม</span></div>
     <div className="services-grid">{services.map(([title,desc,Icon],i)=><div className={`service-card reveal ${i ? `d${Math.min(i,5)}` : ""}`} key={title}><div className="service-icon"><Icon/></div><h3 className="service-title">{title}</h3><p className="service-desc">{desc}</p></div>)}</div>
     <div className="reveal freelance-cta"><a className="btn btn-fill thai" href="#contact">ติดต่อจ้างงาน <ArrowIcon/></a></div>
