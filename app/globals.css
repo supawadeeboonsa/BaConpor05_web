@@ -119,9 +119,9 @@
 
   .hero-actions{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
 
-  .hero-photo{ position:relative; }
+  .hero-photo{ position:relative;width: 300px; }
   .hero-photo-frame{ position:relative; border-radius:2px; overflow:hidden; aspect-ratio:4/5; background:var(--sage); }
-  .hero-photo-frame img{ width:100%; height:100%; object-fit:cover; }
+  .hero-photo-frame img{ width:100%; height: 100%; object-fit:cover; }
   .hero-photo::before,.hero-photo::after{ content:""; position:absolute; width:22px; height:22px; border:1.4px solid var(--dark-olive); opacity:.55; }
   .hero-photo::before{ top:-11px; left:-11px; border-right:none; border-bottom:none; }
   .hero-photo::after{ bottom:-11px; right:-11px; border-left:none; border-top:none; }
